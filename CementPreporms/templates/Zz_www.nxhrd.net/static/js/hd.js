@@ -22,11 +22,11 @@ document.writeln("<div id=\"xxx\"  >");
         this.uid = PPTBoxHelper.getId();
         PPTBoxHelper.instance[this.uid] = this;
         this._$ = function(id){return document.getElementById(id);};
-        this.width = 332;//å®½åº¦
-        this.height = 227;//é«˜åº¦
-        this.picWidth = 15;//å°å›¾å®½åº¦
-        this.picHeight = 12;//å°å›¾é«˜åº¦
-        this.autoplayer = 4;//è‡ªåŠ¨æ’­æ”¾é—´éš”ï¼ˆç§’ï¼‰
+        this.width = 332;//¿í¶È
+        this.height = 227;//¸ß¶È
+        this.picWidth = 15;//Ğ¡Í¼¿í¶È
+        this.picHeight = 12;//Ğ¡Í¼¸ß¶È
+        this.autoplayer = 4;//×Ô¶¯²¥·Å¼ä¸ô£¨Ãë£©
         this.target = "_blank";
         this._box = [];
         this._curIndex = 0;
@@ -155,12 +155,12 @@ document.writeln("<div id=\"xxx\"  >");
       elem.movement = setTimeout(repeat,interval);
     }
 	     var box =new PPTBox();
-     box.width = 980; //å®½åº¦
-     box.height = 330;//é«˜åº¦
-     box.autoplayer = 5;//è‡ªåŠ¨æ’­æ”¾é—´éš”æ—¶é—´
+     box.width = 980; //¿í¶È
+     box.height = 330;//¸ß¶È
+     box.autoplayer = 5;//×Ô¶¯²¥·Å¼ä¸ôÊ±¼ä
 
-     //box.add({"url":"å›¾ç‰‡åœ°å€","title":"æ‚¬æµ®æ ‡é¢˜","href":"é“¾æ¥åœ°å€"})
-     box.add({"url":"/images/01.jpg","href":"","title":""})
-     box.add({"url":"/images/02.jpg","href":"","title":""})
+     //box.add({"url":"Í¼Æ¬µØÖ·","title":"Ğü¸¡±êÌâ","href":"Á´½ÓµØÖ·"})
+     box.add({"url":"static/image/01.jpg","href":"","title":""})
+     box.add({"url":"static/image/02.jpg","href":"","title":""})
      box.show();
 document.writeln("<\/div>")
