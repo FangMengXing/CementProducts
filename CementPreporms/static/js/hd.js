@@ -1,3 +1,4 @@
+{% load staticfiles %}
 document.writeln("<style>");
 document.writeln(".mainbox{");
 document.writeln("    overflow:hidden;");
@@ -160,7 +161,8 @@ document.writeln("<div id=\"xxx\"  >");
      box.autoplayer = 5;//自动播放间隔时间
 
      //box.add({"url":"图片地址","title":"悬浮标题","href":"链接地址"})
-     box.add({"url":"static/image/01.jpg","href":"","title":""})
-     box.add({"url":"static/image/02.jpg","href":"","title":""})
+     // box.add({"url":"/image/01.jpg","href":"","title":""})
+     box.add({"url":"{% static '/image/01.jpg' %}","href":"","title":""})
+     box.add({"url":"/image/02.jpg","href":"","title":""})
      box.show();
 document.writeln("<\/div>")
