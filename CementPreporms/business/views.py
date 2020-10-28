@@ -10,3 +10,8 @@ def business_menu(request):
     context = {}
     context['blogs'] = Blog.objects.all()
     return render_to_response('37.html', context)
+
+def business_news(request):
+	context = {}
+	context['blogs'] = Blog.objects.all()
+	return render_to_response('1.html', context)
