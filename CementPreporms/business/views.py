@@ -15,3 +15,8 @@ def business_news(request):
 	context = {}
 	context['blogs'] = Blog.objects.all()
 	return render_to_response('1.html', context)
+
+def business_products(request):
+	context = {}
+	context['blogs'] = Blog.objects.all()
+	return render_to_response('2.html', context)
