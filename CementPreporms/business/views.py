@@ -20,3 +20,8 @@ def business_products(request):
 	context = {}
 	context['blogs'] = Blog.objects.all()
 	return render_to_response('2.html', context)
+
+def business_credential(request):
+	context = {}
+	context['blogs'] = Blog.objects.all()
+	return render_to_response('39.html', context)
