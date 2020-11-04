@@ -25,3 +25,13 @@ def business_credential(request):
 	context = {}
 	context['blogs'] = Blog.objects.all()
 	return render_to_response('39.html', context)
+
+def business_flow(request):
+	context = {}
+	context['blogs'] = Blog.objects.all()
+	return render_to_response('38.html', context)
+
+def business_we(request):
+	context = {}
+	context['blogs'] = Blog.objects.all()
+	return render_to_response('38.html', context)
